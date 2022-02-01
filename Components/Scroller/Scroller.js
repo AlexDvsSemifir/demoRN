@@ -66,16 +66,22 @@ export const Scroller = () => {
 
   return (
     <SafeAreaView>
+      <Text>Ceci est le composant Scroller</Text>
       {/*
         ScrollView a des options :
         - RefreshControll: Reload quand on remonte dans la liste
             - refreshing: false par défaut pour éviter un chargement infini
-            - OnRefresh: Définit ce qu'il faut faire lors du refresh
+            - onRefresh: Définit ce qu'il faut faire lors du refresh
+            - colors: Permet de définir la couleur de la roue de chargement. Doit être indiqué dans un tableau d'un élément.
         */}
       <ScrollView
         style={styles.scrollView}
         refreshControl={
-          <RefreshControl refreshing={refresh} onRefresh={handleRefresh} />
+          <RefreshControl
+            refreshing={refresh}
+            onRefresh={handleRefresh}
+            colors={['#800080']}
+          />
         }>
         {/* <Text>Composant Scroller</Text> */}
         {items &&
@@ -99,7 +105,7 @@ const styles = StyleSheet.create({
     fontSize: 40,
   },
   scrollView: {
-    height: 300,
+    height: 100,
     backgroundColor: 'pink',
   },
 });
