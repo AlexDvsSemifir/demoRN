@@ -3,6 +3,7 @@ import {View, Text} from 'react-native';
 import React from 'react';
 import Introduction from './Components/Introduction/Introduction';
 import Statusbar from './Components/Statusbar/Statusbar';
+import Scroller from './Components/Scroller/Scroller';
 
 // Structure du composant fonction classique.
 const App = () => {
@@ -11,6 +12,7 @@ const App = () => {
       <Text>APP Works !</Text>
       <Introduction monNom={'Alex'} />
       <Statusbar />
+      <Scroller />
     </View>
   );
 };
