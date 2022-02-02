@@ -7,6 +7,7 @@ import Scroller from './Components/Scroller/Scroller';
 import FlatNest from './Components/FlatNest/FlatNest';
 import NestedList from './Components/NestedList/NestedList';
 import FlexBox from './Components/FlexBox/FlexBox';
+import ExerciceFlex from './Components/ExerciceFlex/ExerciceFlex';
 
 // Structure du composant fonction classique.
 const App = () => {
@@ -18,7 +19,8 @@ const App = () => {
         {/* <Scroller /> */}
         {/* <FlatNest /> */}
         {/* <NestedList /> */}
-        <FlexBox />
+        {/* <FlexBox /> */}
+        <ExerciceFlex />
       </View>
     </View>
   );
