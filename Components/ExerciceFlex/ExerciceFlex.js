@@ -79,6 +79,8 @@ const styles = StyleSheet.create({
     flex: 1,
     background: '#8f9eff',
     alignItems: 'center',
+    borderBottomColor: 'black',
+    borderBottomWidth: 1,
   },
   aside: {
     width: 50,

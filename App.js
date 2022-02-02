@@ -8,6 +8,9 @@ import FlatNest from './Components/FlatNest/FlatNest';
 import NestedList from './Components/NestedList/NestedList';
 import FlexBox from './Components/FlexBox/FlexBox';
 import ExerciceFlex from './Components/ExerciceFlex/ExerciceFlex';
+import TouchPress from './Components/TouchPress/TouchPress';
+import GestionInput from './Components/GestionInput/GestionInput';
+import Alertes from './Components/Alertes/Alertes';
 
 // Structure du composant fonction classique.
 const App = () => {
@@ -20,7 +23,10 @@ const App = () => {
         {/* <FlatNest /> */}
         {/* <NestedList /> */}
         {/* <FlexBox /> */}
-        <ExerciceFlex />
+        {/* <ExerciceFlex /> */}
+        {/* <TouchPress /> */}
+        {/* <GestionInput /> */}
+        <Alertes />
       </View>
     </View>
   );
