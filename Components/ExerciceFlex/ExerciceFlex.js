@@ -1,10 +1,9 @@
 import React from 'react';
-import {View, Text, StyleSheet, Image, IconButton} from 'react-native';
+import {View, Text, StyleSheet, Image} from 'react-native';
 
 export const ExerciceFlex = props => {
   const tardisIcon1 = require('../../src/icons/tardis-icon-14.jpg');
   const tardisIcon2 = require('../../src/icons/tardis-icon-16.jpg');
-  const dwImage = require('https://m.media-amazon.com/images/I/51oRmua+M3L.jpg');
 
   return (
     <View style={styles.container}>
@@ -20,7 +19,12 @@ export const ExerciceFlex = props => {
           <View style={styles.sections}>
             <View style={styles.article}>
               <Text>Ceci est un article</Text>
-              <Image source={dwImage} />
+              <Image
+                source={{
+                  uri: 'https://m.media-amazon.com/images/I/51oRmua+M3L.jpg',
+                }}
+                style={styles.images}
+              />
             </View>
           </View>
           <View style={styles.aside}>
@@ -57,6 +61,7 @@ const styles = StyleSheet.create({
   article: {
     flex: 1,
     background: '#8f9eff',
+    alignItems: 'center',
   },
   aside: {
     width: 50,
@@ -68,6 +73,11 @@ const styles = StyleSheet.create({
   icons: {
     width: 50,
     height: 50,
+    resizeMode: 'contain',
+  },
+  images: {
+    width: 400,
+    height: 400,
     resizeMode: 'contain',
   },
 });
