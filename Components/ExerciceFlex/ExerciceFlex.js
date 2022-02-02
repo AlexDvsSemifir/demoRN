@@ -1,7 +1,21 @@
+// React imports :
+// =================================================================================== //
+
 import React from 'react';
 import {View, Text, StyleSheet, Image} from 'react-native';
 
+// Component :
+// =================================================================================== //
+
+/**
+ * Component de l'exercice FlexBox :
+ *  - Affiche une NavBar contenant des icones,
+ *  - Affiche un aside contenant des icones,
+ *  - Affiche un élément central conternant une image.
+ *  - Réalisé intégralement via FlexBox
+ */
 export const ExerciceFlex = props => {
+  // Images variables :
   const tardisIcon1 = require('../../src/icons/tardis-icon-14.jpg');
   const tardisIcon2 = require('../../src/icons/tardis-icon-16.jpg');
 
@@ -38,6 +52,9 @@ export const ExerciceFlex = props => {
     </View>
   );
 };
+
+// Styles
+// =================================================================================== //
 
 const styles = StyleSheet.create({
   container: {
