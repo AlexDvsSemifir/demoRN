@@ -14,17 +14,21 @@ const Alertes = () => {
     // cancelable : Se mart après le tableau, séparé par une virgule. Détermine ce qui se passe quand on clique sur "OK"
 
     Alert.alert('Mais !', 'Ses pas trait jontille sale pn !', [
-      {text: 'Sorry', onPress: () => Alert.alert('Sorry', 'ses pa grav')},
+      {text: 'Sorry', onPress: handleSorry},
       {
         text: 'Not Sorry',
-        onPress: () => Alert.alert('Not Sorry ?!', 'Mer kel grosse PUTE !'),
+        onPress: handleNotSorry,
       },
       {
         cancelable: true,
-        onDismiss: () => Alert.alert('What ?!', "Tu oses m'ignorer ?!"),
+        onDismiss: () => console.warn('Mais euh'),
       },
     ]);
   };
+
+  const handleSorry = () => Alert.alert('Sorry', 'ses pa grav');
+  const handleNotSorry = () =>
+    Alert.alert('Not Sorry ?!', 'Mer kel grosse PUTE !');
 
   return (
     <View>

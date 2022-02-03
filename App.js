@@ -11,6 +11,7 @@ import ExerciceFlex from './Components/ExerciceFlex/ExerciceFlex';
 import TouchPress from './Components/TouchPress/TouchPress';
 import GestionInput from './Components/GestionInput/GestionInput';
 import Alertes from './Components/Alertes/Alertes';
+import ExoCalculette from './Components/ExoCalculette/ExoCalculette';
 
 // Structure du composant fonction classique.
 const App = () => {
@@ -26,7 +27,8 @@ const App = () => {
         {/* <ExerciceFlex /> */}
         {/* <TouchPress /> */}
         {/* <GestionInput /> */}
-        <Alertes />
+        {/* <Alertes /> */}
+        <ExoCalculette />
       </View>
     </View>
   );
